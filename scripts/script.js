@@ -27,10 +27,6 @@ function confirmar(){
 const getMensaje = ()=>{
     const http = new XMLHttpRequest()
     http.onreadystatechange = ()=>{
-        console.log("onreadystatechange");
-        console.log(http.readyState);
-        console.log(http.status);
-
         if(http.readyState == 4 && http.status == 200){
             document.getElementById('mensaje').innerHTML = http.responseText
         }
