@@ -51,11 +51,7 @@ function obtenerDatos(){
     if (nombre && apellido && telefono && email && asunto && descripcion !== ''){
         getMensaje()
     }
-
-    const datos = {nombre, apellido, telefono, email, asunto, descripcion}
     event.preventDefault()
-    console.log(datos)
-
 }
 
 
