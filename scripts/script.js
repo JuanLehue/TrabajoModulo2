@@ -23,6 +23,7 @@ function confirmar(){
     } 
 }
 
+
 const getMensaje = ()=>{
     const http = new XMLHttpRequest()
     http.onreadystatechange = ()=>{
@@ -46,7 +47,7 @@ function obtenerDatos(){
     const email = document.getElementById('email').value.trim();
     const asunto = document.getElementById('asunto').value.trim();
     const descripcion = document.getElementById('descripcion').value.trim();
-      
+
     if (nombre && apellido && telefono && email && asunto && descripcion !== ''){
         getMensaje()
     }
